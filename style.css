@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-image: url(/markus-spiske-1089438-sm-426.jpg);
+  text-align: center;
+  color: rgba(0, 156, 0, 0.9);
+  font-size: 100px;
+  padding: 100px;
+  border: 20px solid black;
+}
+#game {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+}
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top: 146px;
+}
+  .animate{
+  animation: jump 500ms;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: block 1s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+#controller {
+    margin-top: 30px;
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  
+}
+#controller-button{
+  position: relative;
+  top: 75px;
+  left: 225px;
+ border: 10px solid red;
+  
+  height: 100px;
+  width: 100px;
+  background: black;
+  cursor: pointer;
+}
+#controller-button.on-click{
+  top:0;
+  
+}
