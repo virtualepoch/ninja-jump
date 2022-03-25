@@ -83,12 +83,12 @@ h1 {
   background: rgb(255, 0, 0);
   cursor: pointer;
 }
-#start-button{
- border: 5px solid rgb(139, 139, 139);
- height: 30px;
- width: 60px;
- margin: 85px auto; 
- cursor: pointer;
+#start-button {
+  border: 5px solid rgb(139, 139, 139);
+  height: 30px;
+  width: 60px;
+  margin: 85px auto;
+  cursor: pointer;
 }
 #controller-button-2 {
   border: 5px solid rgb(255, 255, 255);
