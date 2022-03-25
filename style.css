@@ -4,16 +4,16 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: black;
 }
 h1 {
   background-image: url(/markus-spiske-1089438-sm-426.jpg);
   text-align: center;
   color: rgba(0, 156, 0, 0.9);
-  font-size: 50px;
-  padding: 50px;
-  border: 20px solid black;
+  font-size: 30px;
+  padding: 10px;
+  border: 10px solid black;
 }
 #game {
   max-width: 1000px;
@@ -54,14 +54,14 @@ h1 {
   position: relative;
   top: 230px;
   left: 780px;
-  animation: block 1s infinite linear;
+  animation: block 3s infinite linear;
 }
 @keyframes block {
   0% {
     left: 480px;
   }
   100% {
-    left: -40px;
+    left: 40px;
   }
 }
 #controller {
