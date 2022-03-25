@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
 h1 {
   background-image: url(/markus-spiske-1089438-sm-426.jpg);
   text-align: center;
@@ -11,33 +16,35 @@ h1 {
   border: 20px solid black;
 }
 #game {
-  width: 500px;
-  height: 200px;
-  border: 2px solid black;
-  background-color: black;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(161, 159, 159);
 }
 #character {
   width: 20px;
   height: 50px;
-  background-color: red;
+  background-color: rgb(14, 14, 14);
   position: relative;
-  top: 150px;
+  top: 250px;
+  left: 30px;
 }
-  .animate{
+.animate {
   animation: jump 500ms;
 }
 @keyframes jump {
   0% {
-    top: 150px;
+    top: 250px;
   }
   30% {
-    top: 100px;
+    top: 200px;
   }
   70% {
-    top: 100px;
+    top: 200px;
   }
   100% {
-    top: 150px;
+    top: 250px;
   }
 }
 #block {
@@ -45,8 +52,8 @@ h1 {
   height: 20px;
   background-color: blue;
   position: relative;
-  top: 130px;
-  left: 480px;
+  top: 230px;
+  left: 780px;
   animation: block 1s infinite linear;
 }
 @keyframes block {
@@ -58,24 +65,37 @@ h1 {
   }
 }
 #controller {
-    margin-top: 30px;
-  width: 500px;
+  max-width: 800px;
   height: 200px;
-  border: 2px solid black;
-  
+  margin: 40px auto 0 auto;
+  border: 20px solid rgb(139, 139, 139);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-#controller-button{
-  position: relative;
-  top: 75px;
-  left: 225px;
- border: 10px solid red;
-  
+
+#controller-button-1 {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
   height: 100px;
   width: 100px;
-  background: black;
+  margin: 50px 0 50px 50px;
+  background: rgb(255, 0, 0);
   cursor: pointer;
 }
-#controller-button.on-click{
-  top:0;
-  
+#start-button{
+ border: 5px solid rgb(139, 139, 139);
+ height: 30px;
+ width: 60px;
+ margin: 85px auto; 
+ cursor: pointer;
+}
+#controller-button-2 {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 50px 50px 50px 0;
+  background: rgb(255, 0, 0);
+  cursor: pointer;
 }

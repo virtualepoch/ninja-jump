@@ -1,3 +1,5 @@
+alert("Press OK to start");
+
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 
@@ -12,13 +14,17 @@ function jump() {
   }, 500);
 }
 
-var checkDead = setInterval(function () {
-  var characterTop = parsInt(window.getComputedStyle(character).getPropertyValue("top"));
-  var blockLeft = parsInt(window.getComputedStyle(block).getPropertyValue("left"));
+var checkDead = function () {
+  var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
-  if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
-    block.style.animation = "none";
-    block.style.display = "none";
+  if (blockLeft < 50 && blockLeft > 30 && characterTop >= 230) {
     alert("u lose");
   }
-}, 10);
+};
+
+setInterval(checkDead, 10);
+
+function hello() {
+  alert("hello");
+}
