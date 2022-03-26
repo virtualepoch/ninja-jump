@@ -21,7 +21,7 @@ h1 {
   font-size: 20px;
 }
 #game-screen {
-  width: 93vw;
+  width: 92vw;
   height: 52vh;
   margin: 0 auto;
   border: 1px solid white;
@@ -70,7 +70,7 @@ h1 {
     top: 40vh;
   }
   90% {
-    top: 44vh;
+    top: 42vh;
   }
   100% {
     top: 46vh;
