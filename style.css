@@ -6,102 +6,105 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: url(images/gameboy-edit-02.jpg);
+  background: rgb(94 85 104);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
 }
 header {
-  height: 6vh;
+  height: 5vh;
   width: 100vw;
+  text-align: center;
 }
 h1 {
-  margin: 3vh 1vw 0 30vw;
+line-height: 5vh;
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
 }
 #game-screen {
-  width: 92vw;
-  height: 52vh;
+  background: #c5c70e;
+  width: 320px;
+  height: 220px;
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid rgb(63, 63, 63);
   border-radius: 2%;
+  box-shadow: 0px 3px 8px 2px inset;
   overflow: hidden;
 }
 #character {
   background: url(images/ninja-sticker.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 4vw;
-  height: 6vh;
+  width: 20px;
+  height: 60px;
   position: relative;
-  top: 46vh;
-  left: 10vw;
+  top: 160px;
+  left: 20px;
 }
 .animate {
   animation: jump 500ms;
 }
 @keyframes jump {
   0% {
-    top: 46vh;
+    top: 160px;
   }
   10% {
-    top: 44vh;
+    top: 135px;
   }
   20% {
-    top: 42vh;
+    top: 110px;
   }
   30% {
-    top: 40vh;
+    top: 85px;
   }
   40% {
-    top: 38vh;
+    top: 60px;
   }
   50% {
-    top: 36vh;
+    top: 60px;
   }
   60% {
-    top: 36vh;
+    top: 60px;
   }
   70% {
-    top: 36vh;
+    top: 85px;
   }
   80% {
-    top: 40vh;
+    top: 110px;
   }
   90% {
-    top: 42vh;
+    top: 135px;
   }
   100% {
-    top: 46vh;
+    top: 160px;
   }
 }
 #enemy {
-  width: 2vw;
-  height: 3vh;
+  width: 20px;
+  height: 40px;
   background: url(images/red-skull-sticker-edit.png);
   background-size: 100% 100%;
   position: relative;
-  top: 42vh;
-  left: 78vw;
+  top: 114px;
+  left: 260px;
   animation: block 3s infinite linear;
+  border: solid black;
 }
 @keyframes block {
   0% {
-    left: 120vw;
+    left: 320px;
   }
   40% {
-    left: 80vw;
+    left: 250px;
   }
   100% {
-    left: -20vw;
+    left: -20px;
   }
 }
 #controller {
   width: 100vw;
   height: 30vh;
-  border: 10px solid rgb(139, 139, 139);
-  border-radius: 10px;
+  background: rgb(226 211 192);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -113,8 +116,7 @@ h1 {
   background-size: cover;
   height: 100px;
   width: 100px;
-  margin: 50px 0 50px 30px;
-
+  margin: 20px 0 20px 20px;
   cursor: pointer;
 }
 #start-button {
@@ -125,11 +127,12 @@ h1 {
   cursor: pointer;
 }
 #controller-button-2 {
-  border: 5px solid rgb(255, 255, 255);
+ 
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  margin: 50px 30px 50px 0;
-  background: rgb(255, 0, 0);
+  margin: 38px 30px 0 0;
+  background: url(images/gameboy-button.png);
+  background-size: 100% 100%;
   cursor: pointer;
 }
