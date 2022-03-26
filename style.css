@@ -6,7 +6,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: url(/gameboy-edit-02.jpg);
+  background: url(images/gameboy-edit-02.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
@@ -20,17 +20,20 @@ h1 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
 }
-#game {
+#game-screen {
   width: 93vw;
   height: 52vh;
   margin: 0 auto;
-  border:  1px solid white;
+  border: 1px solid white;
   border-radius: 2%;
+  overflow: hidden;
 }
 #character {
-  width: 3vw;
+  background: url(images/ninja-sticker.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 4vw;
   height: 6vh;
-  background-color: rgb(14, 14, 14);
   position: relative;
   top: 46vh;
   left: 10vw;
@@ -40,33 +43,58 @@ h1 {
 }
 @keyframes jump {
   0% {
-    top: 250px;
+    top: 46vh;
+  }
+  10% {
+    top: 44vh;
+  }
+  20% {
+    top: 42vh;
   }
   30% {
-    top: 200px;
+    top: 40vh;
+  }
+  40% {
+    top: 38vh;
+  }
+  50% {
+    top: 36vh;
+  }
+  60% {
+    top: 36vh;
   }
   70% {
-    top: 200px;
+    top: 36vh;
+  }
+  80% {
+    top: 40vh;
+  }
+  90% {
+    top: 44vh;
   }
   100% {
-    top: 250px;
+    top: 46vh;
   }
 }
-#block {
+#enemy {
   width: 2vw;
   height: 3vh;
-  background-color: blue;
+  background: url(images/red-skull-sticker-edit.png);
+  background-size: 100% 100%;
   position: relative;
-  top: 43vh;
+  top: 42vh;
   left: 78vw;
-  animation: block 3s infiite linear;
+  animation: block 3s infinite linear;
 }
 @keyframes block {
   0% {
-    left: 480px;
+    left: 120vw;
+  }
+  40% {
+    left: 80vw;
   }
   100% {
-    left: 40px;
+    left: -20vw;
   }
 }
 #controller {
@@ -81,7 +109,7 @@ h1 {
 }
 
 #controller-x-pad {
-  background: url(/gameboy-x-pad.png);
+  background: url(images/gameboy-x-pad.png);
   background-size: cover;
   height: 100px;
   width: 100px;

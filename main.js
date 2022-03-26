@@ -1,28 +1,22 @@
 var character = document.getElementById("character");
-var block = document.getElementById("block");
+var enemy = document.getElementById("enemy");
 
 function jump() {
   if (character.classList.contains("animate")) {
     return;
   }
 
- character.classList.add("animate");
+  character.classList.add("animate");
   setTimeout(function () {
     character.classList.remove("animate");
   }, 500);
 }
 
-var checkDead = function () {
+var checkDead = setInterval(function () {
   var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+  var blockLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue("left"));
 
-  if (blockLeft < 50 && blockLeft > 30 && characterTop >= 230) {
-    alert("u lose");
+  if (blockLeft < 14 && blockLeft > 10 && characterTop >= 42) {
+    
   }
-};
-
-setInterval(checkDead, 10);
-
-function hello() {
-  alert("hello");
-}
+}, 10);
