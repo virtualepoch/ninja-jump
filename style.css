@@ -1,34 +1,39 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100vw;
-  height: 100%;
-  background-color: black;
+  height: 100vh;
+  background: url(/gameboy-edit-02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+header {
+  height: 6vh;
+  width: 100vw;
 }
 h1 {
-  background-image: url(/markus-spiske-1089438-sm-426.jpg);
-  text-align: center;
-  color: rgba(0, 156, 0, 0.9);
-  font-size: 30px;
-  padding: 10px;
-  border: 10px solid black;
+  margin: 3vh 1vw 0 30vw;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
 }
 #game {
-  max-width: 1000px;
-  height: 300px;
+  width: 93vw;
+  height: 52vh;
   margin: 0 auto;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(161, 159, 159);
+  border:  1px solid white;
+  border-radius: 2%;
 }
 #character {
-  width: 20px;
-  height: 50px;
+  width: 3vw;
+  height: 6vh;
   background-color: rgb(14, 14, 14);
   position: relative;
-  top: 250px;
-  left: 30px;
+  top: 46vh;
+  left: 10vw;
 }
 .animate {
   animation: jump 500ms;
@@ -48,13 +53,13 @@ h1 {
   }
 }
 #block {
-  width: 20px;
-  height: 20px;
+  width: 2vw;
+  height: 3vh;
   background-color: blue;
   position: relative;
-  top: 230px;
-  left: 780px;
-  animation: block 3s infinite linear;
+  top: 43vh;
+  left: 78vw;
+  animation: block 3s infiite linear;
 }
 @keyframes block {
   0% {
@@ -65,37 +70,38 @@ h1 {
   }
 }
 #controller {
-  max-width: 800px;
-  height: 200px;
-  margin: 40px auto 0 auto;
-  border: 20px solid rgb(139, 139, 139);
+  width: 100vw;
+  height: 30vh;
+  border: 10px solid rgb(139, 139, 139);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
 }
 
-#controller-button-1 {
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 50%;
+#controller-x-pad {
+  background: url(/gameboy-x-pad.png);
+  background-size: cover;
   height: 100px;
   width: 100px;
-  margin: 50px 0 50px 50px;
-  background: rgb(255, 0, 0);
+  margin: 50px 0 50px 30px;
+
   cursor: pointer;
 }
 #start-button {
   border: 5px solid rgb(139, 139, 139);
   height: 30px;
   width: 60px;
-  margin: 85px auto;
+  margin: 70px auto;
   cursor: pointer;
 }
 #controller-button-2 {
   border: 5px solid rgb(255, 255, 255);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  margin: 50px 50px 50px 0;
+  height: 70px;
+  width: 70px;
+  margin: 50px 30px 50px 0;
   background: rgb(255, 0, 0);
   cursor: pointer;
 }

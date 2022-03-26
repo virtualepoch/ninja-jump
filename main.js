@@ -1,5 +1,3 @@
-alert("Press OK to start");
-
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 
