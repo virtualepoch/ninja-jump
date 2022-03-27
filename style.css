@@ -11,7 +11,7 @@ body {
   background-size: 100% 100%;
   overflow: hidden;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 header {
   height: 5vh;
@@ -112,9 +112,12 @@ h1 {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #controller-x-pad {
@@ -150,7 +153,7 @@ audio {
   height: 30px;
   width: 23px;
   position: fixed;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -166,7 +169,7 @@ audio {
   height: 20px;
   width: 100px;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 130px;
   right: 0;
   margin: 0 auto;
@@ -177,4 +180,3 @@ audio {
   text-align: center;
   line-height: 14px;
 }
-
