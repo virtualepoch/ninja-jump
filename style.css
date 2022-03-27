@@ -89,7 +89,7 @@ h1 {
   position: relative;
   top: 114px;
   left: 260px;
-  animation: block 3s infiite linear;
+  animation: block 3s infinite linear;
 }
 @keyframes block {
   0% {
