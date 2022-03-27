@@ -16,7 +16,7 @@ setInterval(checkDead, 10);
 function checkDead() {
   var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
   var blockLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue("left"));
-  if (blockLeft < 14 && blockLeft > 10 && characterTop >= 42) {
+  if (blockLeft < 40 && blockLeft > 20 && characterTop >= 120) {
     alert("GAME OVER");
     enemy.style.animation = "none";
   }
